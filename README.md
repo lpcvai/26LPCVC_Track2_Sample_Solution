@@ -101,7 +101,7 @@ refactor.refactor_dataset()
 
 The script organizes videos into the following structure:
 
-```
+```text
 root/
 ├── train/
 │   ├── action_category_1/
@@ -246,7 +246,7 @@ The script will:
 
 **Expected output layout:**
 
-```
+```text
 OUT_ROOT/
 ├── manifest.jsonl
 ├── class_a/
@@ -424,7 +424,7 @@ For a quick sanity check on a single sample, first set `USE_SINGLE_TENSOR = True
 
 ### :arrows_counterclockwise: Full Pipeline Summary
 
-```
+```text
 Raw videos
     │
     ▼  preprocess_and_save.py
@@ -454,3 +454,18 @@ Raw videos
 - Built on [PyTorch Vision](https://github.com/pytorch/vision)
 - Dataset: QEVD (Qualcomm Exercise Video Dataset)
 - [Qualcomm AI Hub ResNet Model](https://github.com/qualcomm/ai-hub-models/tree/main/qai_hub_models/models/resnet_2plus1d)
+
+---
+
+## Citation
+
+If you use this sample solution or refer to the IEEE Low-Power Computer Vision Challenge, please cite the challenge as follows:
+
+```bibtex
+@misc{lpcvc,
+  author       = {{IEEE Low Power Computer Vision Challenge Organizing Committee}},
+  title        = {{IEEE Low Power Computer Vision Challenge}},
+  howpublished = {\url{https://lpcv.ai/}},
+  note         = {Annual competition series on low power computer vision}
+}
+```
